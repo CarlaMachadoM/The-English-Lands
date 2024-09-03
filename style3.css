@@ -12,7 +12,7 @@ html, body {
     background-size: contain; /* Ensures the entire background image is visible */
     background-position: center; /* Centers the background image */
     background-repeat: no-repeat; /* Prevents the background image from repeating */
-    background-color: rgb(185, 174, 21)
+    background-color: rgb(246,242,183)
 }
 
 header {
