@@ -5,28 +5,40 @@
     box-sizing: border-box;
 }
 
-h1 {
-    color: #ff0048;
-    font-family:'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: 60px;
-    padding-inline: 400px;
-    margin-top: 10px;
-}
-
 html, body {
     height: 100%;
+    margin: 0;
     font-family: Arial, sans-serif;
     background-image: url('https://images.pexels.com/photos/640907/pexels-photo-640907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #fff;
-    
 }
 
 header {
     text-align: center;
     padding: 5% 0;
     position: relative;
+    width: 100%;
+}
+
+h1 {
+    color: #ff0048;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 60px;
+    margin: 0; /* Remove default margin */
+    position: absolute; /* Center vertically and horizontally */
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.choose{
+    font-size: 20px;
+    top: 30%;
 }
 
 .logo {
@@ -39,51 +51,64 @@ header {
     width: 145px;
     height: auto;
     border-radius: 50%;
-    border: 3px solid #fff;
+    
+}
+
+nav {
+    position: relative;
+    text-align: center;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    flex-wrap: wrap; /* Wrap items on small screens */
+    transition: 1s;
 }
 
 nav ul li {
     display: inline-block;
-    margin-right: 90px;
-    margin-top: 190px
+    margin: 0 15px; /* Adjust spacing between items */
+    transition: 1s;
 }
 
 nav ul li.home a {
-    background-color: rgb(94,84,115); /* Your desired color */
-    border-color: rgb(94,84,115); /* Your desired color */
+    color: rgb(163, 130, 255);
+    transition: 1s;
 }
 
 nav ul li.home a:hover {
-    background-color: rgb(41, 44, 88); /* Your desired hover color */
-    border-color: rgb(41, 44, 88); /* Your desired hover color */
+    color: rgb(252, 237, 126);
+    font-size: 40px;
+    transition: 1s;
 }
 
 nav ul li a {
-    color: #fff;
+    color: rgb(252, 237, 126);
     text-decoration: none;
     font-size: 18px;
     padding: 10px 20px;
-    background-color: rgb(255, 105, 51);
-    border: 2px;
     border-radius: 20px;
+    transition: background-color 1s, border-color 1s;
+    font-family: 'Barlow-Medium', 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 35px;
     transition: 1s;
-    font-family:'Barlow-Medium','Courier New', Courier, monospace;
-    font-weight: bold;
 }
 
 nav ul li a:hover {
-    background-color:rgb(250, 84, 23);
-    border-color: rgb(250, 84, 23);
+    font-size: 40px;
+    transition: 1s;
+    color: rgb(252, 237, 126);
+    text-decoration:underline;
+    font-weight: bolder;
+    
 }
 
-/* Media Query for Mobile Devices */
+/* Mobile */
 @media screen and (max-width: 768px) {
     header {
         padding: 10% 0;
@@ -94,25 +119,26 @@ nav ul li a:hover {
         left: 10px;
     }
     
-    .logo img{
+    .logo img {
         width: 80px;
     }
 
     nav ul {
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        position: static; /* Remove absolute positioning */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center items horizontally */
     }
 
     nav ul li {
+        margin: 15px 0; /* Adjust margin for spacing */
         display: block;
-        margin: 30px auto;
     }
 
-    /* Override background image for mobile */
-    html, body {
-        background-image: url('https://i.ibb.co/w6KD018/1.png');
-        background-size: cover;
+    h1 {
+        font-size: 30px;
+        position: static; /* Reset absolute positioning for mobile */
+        margin: 30px auto; /* Center horizontally */
+        text-align: center;
     }
 }

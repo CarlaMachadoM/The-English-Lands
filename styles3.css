@@ -37,46 +37,52 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: center;
-    position: absolute;
-    top: 0; /* Position the navigation container at the top */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    flex-wrap: wrap; /* Wrap items on small screens */
+    transition: 1s;
+    
 }
 
 nav ul li {
     display: inline-block;
-    margin-right: 35px; /* Adjust spacing between links */
-    margin-top: 30px
+    margin: 25px;
+    position: relative; /* Adicione esta linha */
+    top: -100px; /* Ajuste este valor conforme necessário */
+    left: 50px;
 }
+
 
 nav ul li.watching a {
-    background-color: rgb(94,84,115); /* Your desired color */
-    border-color: rgb(85, 115, 84); /* Your desired color */
+    color: rgb(163, 130, 255);
+    transition: 1s;
 }
 
-nav ul li.watching a:hover {
-    background-color: rgb(41, 44, 88); /* Your desired hover color */
-    border-color: rgb(41, 44, 88); /* Your desired hover color */
-}
+
 
 nav ul li a {
-    color: #fff;
+    color: rgb(252, 237, 126);
     text-decoration: none;
     font-size: 18px;
     padding: 10px 20px;
-    background-color: rgb(255, 105, 51);
-    border: 2px;
     border-radius: 20px;
+    transition: background-color 1s, border-color 1s;
+    font-family: 'Barlow-Medium', 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 35px;
     transition: 1s;
-    font-family:'Barlow-Medium','Courier New', Courier, monospace;
-    font-weight: bold;
+    
 }
 
 nav ul li a:hover {
-    background-color:rgb(250, 84, 23);
-    border-color: rgb(250, 84, 23);
+    font-size: 40px;
+    transition: 1s;
+    color: rgb(252, 237, 126);
+    text-decoration:underline;
+    font-weight: bolder;
+    
 }
+
 
 .video {
     width: 450px;
@@ -130,7 +136,7 @@ nav ul li a:hover {
 
     /* Override background image for mobile */
     html, body {
-        background-image: url('https://i.ibb.co/nfqcpBw/3.png');
+        background-image: url('https://images.pexels.com/photos/1672813/pexels-photo-1672813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
         background-size: contain;
         background-position: center;
     }
