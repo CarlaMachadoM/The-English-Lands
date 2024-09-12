@@ -17,6 +17,8 @@ header {
     text-align: center;
     padding: 5% 0;
     position: relative;
+    background-color: rgba(255, 255, 255, 0.664);
+    padding: 50px;
 }
 
 .logo {
@@ -32,6 +34,13 @@ header {
     
 }
 
+nav {
+    text-align: center;
+    padding: 15px;
+    padding-inline: 10px;
+    
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -40,7 +49,6 @@ nav ul {
     justify-content: center; /* Center horizontally */
     flex-wrap: wrap; /* Wrap items on small screens */
     transition: 1s;
-    
 }
 
 nav ul li {
@@ -53,18 +61,18 @@ nav ul li {
 
 
 nav ul li.reading a {
-    color: rgb(163, 130, 255);
+    color: rgb(8, 118, 50);
     transition: 1s;
 }
 
-nav ul li.home a:hover {
-    color: rgb(252, 237, 126);
+nav ul li.reading a:hover {
+    color: rgb(34, 110, 64);
     font-size: 40px;
     transition: 1s;
 }
 
 nav ul li a {
-    color: rgb(252, 237, 126);
+    color: rgb(34, 58, 145);
     text-decoration: none;
     font-size: 18px;
     padding: 10px 20px;
@@ -80,7 +88,7 @@ nav ul li a {
 nav ul li a:hover {
     font-size: 40px;
     transition: 1s;
-    color: rgb(252, 237, 126);
+    color: rgb(53, 74, 148);
     text-decoration:underline;
     font-weight: bolder;
     
@@ -88,42 +96,87 @@ nav ul li a:hover {
 
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 768px) {
-    header {
-        padding: 10% 0;
+
+    html, body {
+        background-image: url('https://images.pexels.com/photos/4064432/pexels-photo-4064432.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        background-size: fill;
+        background-position: fill;
     }
+    
     
     .logo {
         top: 10px;
         left: 10px;
     }
     
-    .logo img{
+    .logo img {
         width: 80px;
     }
 
+    nav {
+        display: inline;
+        text-align: center;
+        padding-inline: 30px;
+        margin-inline: 20px;
+    }
+    
     nav ul {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        flex-wrap: wrap; /* Wrap items on small screens */
+        transition: 1s;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        margin: 0 15px; /* Adjust spacing between items */
+        transition: 1s;
     }
 
-    nav ul li {
-        display: block;
-        margin: 30px auto;
+    nav ul li a {
+        color: rgb(34, 58, 145);
+        text-decoration: none;
+        display: grid;
+        border-radius: 20px;
+        transition: background-color 1s, border-color 1s;
+        font-family: 'Barlow-Medium', 'Courier New', Courier, monospace;
+        font-weight: bolder;
+        font-size: 18px;
+        transition: 1s;
+        margin-right: 30px;
+        justify-content:center;
     }
+    
+    nav ul li a:hover {
+        font-size: 20px;
+        transition: 1s;
+        color: rgb(67, 91, 179);
+        text-decoration:underline;
+        font-weight: bolder;
+        
+    }
+
+    nav ul li.reading a {
+        color: #ac0f0f;
+        transition: 1s;
+    }
+
+    nav ul li.reading a:hover {
+        color: #ff0000;
+        font-size: 20px;
+        transition: 1s;
+    }
+
 
     /* Override background image for mobile */
     html, body {
-        background-image: url('https://images.pexels.com/photos/9272435/pexels-photo-9272435.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-        background-size: contain;
+        background-image: url('https://images.pexels.com/photos/4064432/pexels-photo-4064432.jpeg');
+        background-size: fill;
         background-position: center;
     }
 }
 
-/* Adjust position of links for screens wider than 768px */
-@media screen and (min-width: 769px) {
-    nav ul {
-        top: 30px; /* Move the navigation container down from the top */
-    }
-}
+

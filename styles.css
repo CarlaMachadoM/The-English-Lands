@@ -24,10 +24,10 @@ header {
 }
 
 h1 {
-    color: #ff0048;
+    color: #ff0000;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 50px;
     margin: 0; /* Remove default margin */
     position: absolute; /* Center vertically and horizontally */
     top: 15%;
@@ -50,13 +50,15 @@ h1 {
 .logo img {
     width: 145px;
     height: auto;
-    border-radius: 50%;
-    
+    border-radius: 50%;   
 }
 
 nav {
     position: relative;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.664);
+    padding: 15px;
+    padding-inline: 10px;
 }
 
 nav ul {
@@ -76,20 +78,19 @@ nav ul li {
 }
 
 nav ul li.home a {
-    color: rgb(163, 130, 255);
+    color: #ac0f0f;
     transition: 1s;
 }
 
 nav ul li.home a:hover {
-    color: rgb(252, 237, 126);
+    color: #ff0000;
     font-size: 40px;
     transition: 1s;
 }
 
 nav ul li a {
-    color: rgb(252, 237, 126);
+    color: rgb(34, 58, 145);
     text-decoration: none;
-    font-size: 18px;
     padding: 10px 20px;
     border-radius: 20px;
     transition: background-color 1s, border-color 1s;
@@ -102,7 +103,7 @@ nav ul li a {
 nav ul li a:hover {
     font-size: 40px;
     transition: 1s;
-    color: rgb(252, 237, 126);
+    color: rgb(67, 91, 179);
     text-decoration:underline;
     font-weight: bolder;
     
@@ -110,8 +111,15 @@ nav ul li a:hover {
 
 /* Mobile */
 @media screen and (max-width: 768px) {
+
+    html, body {
+        background-image: url('https://images.pexels.com/photos/2265879/pexels-photo-2265879.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        background-size: fill;
+        background-position: fill;
+    }
+    
     header {
-        padding: 10% 0;
+        padding: 0;
     }
     
     .logo {
@@ -121,6 +129,23 @@ nav ul li a:hover {
     
     .logo img {
         width: 80px;
+    }
+
+    h1{
+        
+    color: #ff0000;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0; /* Remove default margin */
+    position: absolute; /* Center vertically and horizontally */
+    top: 10%;
+    left: 30%;
+    transform: translate(-1%, 50%);
+    position: static; /* Reset absolute positioning for mobile */
+    margin: 30px auto; /* Center horizontally */
+    text-align: center;
+
     }
 
     nav ul {
@@ -135,10 +160,11 @@ nav ul li a:hover {
         display: block;
     }
 
-    h1 {
-        font-size: 30px;
-        position: static; /* Reset absolute positioning for mobile */
-        margin: 30px auto; /* Center horizontally */
-        text-align: center;
+    nav ul li a {
+        font-size: 25px;
+    }
+
+    nav{
+        background-color: #ffffff5e;
     }
 }
