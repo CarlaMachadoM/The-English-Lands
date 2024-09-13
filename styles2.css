@@ -49,6 +49,7 @@ nav ul {
     justify-content: center; /* Center horizontally */
     flex-wrap: wrap; /* Wrap items on small screens */
     transition: 1s;
+
 }
 
 nav ul li {
