@@ -167,4 +167,51 @@ nav ul li a:hover {
         font-family: 'Barlow-Medium', 'Courier New', Courier, monospace;
         font-weight: bolder;
         font-size: 18px;
-        transition:
+        transition: 1s;
+        margin-right: 30px;
+        justify-content: center;
+    }
+    
+    nav ul li a:hover {
+        font-size: 20px;
+        transition: 1s;
+        color: rgb(67, 91, 179);
+        text-decoration: underline;
+        font-weight: bolder;
+    }
+
+    nav ul li.watching a {
+        color: #ac0f0f;
+        transition: 1s;
+    }
+
+    nav ul li.watching a:hover {
+        color: #ff0000;
+        font-size: 20px;
+        transition: 1s;
+    }
+
+    /* Override background image for mobile */
+    html, body {
+        background-image: url('https://images.pexels.com/photos/19360293/pexels-photo-19360293/free-photo-of-ponto-de-referencia-ponto-historico-viagem-historia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        background-size: cover; /* Ajustar tamanho da imagem */
+        background-position: center; /* Centralizar a imagem de fundo */
+    }
+
+    .video {
+        width: 90%; /* Ajustar video width */
+        height: 300px;
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    .video2 {
+        width: 90%; /* Ajustar video width */
+        height: 300px;
+        border-radius: 10px;
+        margin-top: 70px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+}
