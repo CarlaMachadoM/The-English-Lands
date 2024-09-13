@@ -9,9 +9,10 @@ html, body {
     height: 100%;
     font-family: Arial, sans-serif;
     background-image: url('https://images.pexels.com/photos/1672813/pexels-photo-1672813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    background-size:cover;
+    background-size: cover;
+    background-attachment: fixed; /* Fixar a imagem de fundo */
+    background-position: center; /* Centralizar a imagem de fundo */
     color: #fff;
-    background-image:fixed;
 }
 
 header {
@@ -32,15 +33,14 @@ header {
     width: 145px;
     height: auto;
     border-radius: 50%;
-   
 }
 
 nav {
     text-align: center;
     padding: 15px;
     padding-inline: 10px;
-    
 }
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -49,7 +49,6 @@ nav ul {
     justify-content: center; /* Center horizontally */
     flex-wrap: wrap; /* Wrap items on small screens */
     transition: 1s;
-    
 }
 
 nav ul li {
@@ -59,7 +58,6 @@ nav ul li {
     top: -100px; /* Ajuste este valor conforme necessário */
     left: 50px;
 }
-
 
 nav ul li.watching a {
     color: rgb(172, 15, 15);
@@ -83,18 +81,15 @@ nav ul li a {
     font-weight: bolder;
     font-size: 35px;
     transition: 1s;
-    
 }
 
 nav ul li a:hover {
     font-size: 40px;
     transition: 1s;
     color: rgb(95, 116, 192);
-    text-decoration:underline;
+    text-decoration: underline;
     font-weight: bolder;
-    
 }
-
 
 .video {
     width: 450px;
@@ -118,14 +113,13 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 768px) {
 
     html, body {
         background-image: url('https://images.pexels.com/photos/34098/south-africa-hluhluwe-giraffes-pattern.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-        background-size: fill;
-        background-position: center;
+        background-size: cover; /* Ajustar tamanho da imagem */
+        background-position: center; /* Centralizar a imagem de fundo */
     }
     
     header {
@@ -173,54 +167,4 @@ nav ul li a:hover {
         font-family: 'Barlow-Medium', 'Courier New', Courier, monospace;
         font-weight: bolder;
         font-size: 18px;
-        transition: 1s;
-        margin-right: 30px;
-        justify-content:center;
-    }
-    
-    nav ul li a:hover {
-        font-size: 20px;
-        transition: 1s;
-        color: rgb(67, 91, 179);
-        text-decoration:underline;
-        font-weight: bolder;
-        
-    }
-
-    nav ul li.watching a {
-        color: #ac0f0f;
-        transition: 1s;
-    }
-
-    nav ul li.watching a:hover {
-        color: #ff0000;
-        font-size: 20px;
-        transition: 1s;
-    }
-
-
-
-    /* Override background image for mobile */
-    html, body {
-        background-image: url('https://images.pexels.com/photos/19360293/pexels-photo-19360293/free-photo-of-ponto-de-referencia-ponto-historico-viagem-historia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-        background-size: fill;
-        background-position: fill;
-    }
-
-    .video {
-        width: 90%; /* Adjust video width */
-        height: 300px;
-        border-radius: 10px;
-        margin-top: 30px;
-        margin-left: 20px;
-    }
-
-    .video2 {
-        width: 90%; /* Adjust video width */
-        height: 300px;
-        border-radius: 10px;
-        margin-top: 70px;
-        margin-left: 20px;
-        margin-bottom: 20px  
-    }
-}
+        transition:
