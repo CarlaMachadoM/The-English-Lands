@@ -103,7 +103,7 @@ nav ul li a {
 nav ul li a:hover {
     font-size: 40px;
     transition: 1s;
-    color: rgb(67, 91, 179);
+    color: rgb(95, 116, 192);
     text-decoration:underline;
     font-weight: bolder;
     

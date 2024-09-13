@@ -61,12 +61,12 @@ nav ul li {
 
 
 nav ul li.reading a {
-    color: rgb(8, 118, 50);
+    color: #ac0f0f;
     transition: 1s;
 }
 
 nav ul li.reading a:hover {
-    color: rgb(34, 110, 64);
+    color: #ff0000;
     font-size: 40px;
     transition: 1s;
 }
@@ -88,7 +88,7 @@ nav ul li a {
 nav ul li a:hover {
     font-size: 40px;
     transition: 1s;
-    color: rgb(53, 74, 148);
+    color: rgb(95, 116, 192);
     text-decoration:underline;
     font-weight: bolder;
     
