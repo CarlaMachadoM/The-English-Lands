@@ -62,12 +62,12 @@ nav ul li {
 
 
 nav ul li.reading a {
-    color: #ac0f0f;
+    color: rgb(172, 15, 15);
     transition: 1s;
 }
 
 nav ul li.reading a:hover {
-    color: #ff0000;
+    color: rgb(255, 0, 0);
     font-size: 40px;
     transition: 1s;
 }
