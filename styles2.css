@@ -8,7 +8,7 @@
 html, body {
     height: 100%;
     font-family: Arial, sans-serif;
-    background-image: url('https://images.pexels.com/photos/9272435/pexels-photo-9272435.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-image: url('https://images.pexels.com/photos/29049/pexels-photo.jpg');
     background-size: cover;
     color: #fff;
 }
@@ -68,15 +68,14 @@ nav ul li.reading a {
 
 nav ul li.reading a:hover {
     color: rgb(255, 0, 0);
-    font-size: 40px;
+    font-size: 38px;
     transition: 1s;
 }
 
 nav ul li a {
     color: rgb(34, 58, 145);
     text-decoration: none;
-    font-size: 18px;
-    padding: 10px 20px;
+    padding: 20px 40px;
     border-radius: 20px;
     transition: background-color 1s, border-color 1s;
     font-family: 'Barlow-Medium', 'Courier New', Courier, monospace;
@@ -87,7 +86,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    font-size: 40px;
+    font-size: 38px;
     transition: 1s;
     color: rgb(95, 116, 192);
     text-decoration:underline;

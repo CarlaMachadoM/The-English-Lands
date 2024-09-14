@@ -8,7 +8,7 @@
 html, body {
     height: 100%;
     font-family: Arial, sans-serif;
-    background-image: url('https://images.pexels.com/photos/24373846/pexels-photo-24373846/free-photo-of-desfiladeiro-charles-knife-perto-de-exmouth-wa.jpeg');
+    background-image: url('https://images.pexels.com/photos/90945/pexels-photo-90945.jpeg');
     background-size: cover;
     color: #fff;
 }
@@ -68,7 +68,7 @@ nav ul li.conversation a {
 
 nav ul li.conversation a:hover {
     color: rgb(255, 0, 0);
-    font-size: 40px;
+    font-size: 38px;
     transition: 1s;
 }
 
@@ -76,8 +76,7 @@ nav ul li.conversation a:hover {
 nav ul li a {
     color: rgb(34, 58, 145);
     text-decoration: none;
-    font-size: 18px;
-    padding: 10px 20px;
+    padding: 20px 40px;
     border-radius: 20px;
     transition: background-color 1s, border-color 1s;
     font-family: 'Barlow-Medium', 'Courier New', Courier, monospace;
@@ -88,7 +87,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    font-size: 40px;
+    font-size: 38px;
     transition: 1s;
     color: rgb(95, 116, 192);
     text-decoration:underline;
@@ -171,7 +170,7 @@ nav ul li a:hover {
 
     /* Override background image for mobile */
     html, body {
-        background-image: url('https://images.pexels.com/photos/415585/pexels-photo-415585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        background-image: url('https://images.pexels.com/photos/5316686/pexels-photo-5316686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
         background-size: fill;
         background-position: center;
     }
